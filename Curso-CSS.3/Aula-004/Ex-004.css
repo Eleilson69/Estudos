@@ -1,0 +1,17 @@
+@font-face {
+    font-family: 'amore';
+    src: url(Fontes/Amore.otf)format('opentype');
+}
+
+@font-face {
+    font-family: 'kdam';
+    src: url(Fontes/KdamThmorPro-Regular.ttf)format('truetype');
+}
+
+h1 {
+    font-family: 'amore';
+}
+
+h2 {
+    font-family: 'kdam';
+}

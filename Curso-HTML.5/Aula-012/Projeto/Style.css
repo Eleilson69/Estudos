@@ -1,0 +1,21 @@
+h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.conteiner1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    padding-left: 5;
+}
+
+.conteiner2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
