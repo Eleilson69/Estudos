@@ -1,5 +1,23 @@
-body {
-    background-image: url(imagens/wallpaper001.jpg);
-    background-size: 100px 100px;
-    background-repeat: no-repeat;
+div.bloco {
+    background-image: url(imagens/wallpaper003.jpg);
+    height: 200px;
+    border: 1px solid black;
+    margin: 5px;
+    border-radius: 10px;
+}
+
+#qi {
+    background-position: left top;
+}
+
+#q2 {
+    background-position: left center;
+}
+
+#q3 {
+    background-position: right bottom;
+}
+
+#q4 {
+    background-position: center center;
 }
