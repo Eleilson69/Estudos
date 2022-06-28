@@ -1,0 +1,59 @@
+@charset "UTF-8";
+@font-face {
+    font-family: "PassionOne-Black";
+    src: url(../fontes/PassionOne-Black.ttf)format("truetype");
+}
+
+@font-face {
+    font-family: "PassionOne-Bold";
+    src: url(../fontes/PassionOne-Bold.ttf)format("truetype");
+}
+
+@font-face {
+    font-family: "PassionOne-Regular";
+    src: url(../fontes/PassionOne-Regular.ttf)format("truetype");
+}
+
+@font-face {
+    font-family: "Sriracha-Regular";
+    src: url(../fontes/Sriracha-Regular.ttf)format("truetype");
+}
+
+:root {
+    --fonte1: Verdana, Tahoma, sans-serif;
+    --fonte2: 'PassionOne-Black';
+    --fonte3: 'PassionOne-Bold';
+    --fonte4: 'PassionOne-Regular';
+    --fonte5: 'Sriracha-Regular';
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 270px;
+    background-color: black;
+}
+
+header>h1 {
+    color: #fff;
+    font-size: 8rem;
+    font-family: var(--fonte3);
+}
+
+header>p {
+    font-family: var(--fonte1);
+    color: #fff;
+}
+
+header>p>a {
+    font-family: var(--fonte3);
+    color: #fff;
+    text-decoration: none;
+}
