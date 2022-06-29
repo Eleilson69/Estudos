@@ -116,4 +116,5 @@ footer {
     padding: 10px;
     display: flex;
     justify-content: center;
+    font-family: var(--fonte1);
 }
