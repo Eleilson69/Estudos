@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculadora</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            width: 300px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Calculadora</h1>
+    <label for="Adição">Somar</label>
+    <input type="number" name="txtn1" id="txtn1"> +
+    <input type="number" name="txtn2" id="txtn2">
+    <input type="button" value="somar" onclick="somar()">
+    <div id="res">Resultado</div>
+
+    <label for="Subtração">Subtração</label>
+    <input type="number" name="txtn3" id="txtn3"> -
+    <input type="number" name="txtn4" id="txtn4">
+    <input type="button" value="subtrair" onclick="subtrair()">
+    <div id="res2">Resultado</div>
+
+    <script>
+        function somar() {
+            var tn1 = document.getElementById('txtn1')
+            var tn2 = document.getElementById('txtn2')
+            var res = document.getElementById('res')
+            var n1 = Number(tn1.value)
+            var n2 = Number(tn2.value)
+            var s = n1 + n2
+            res.innerHTML = ` A soma entre ${n1} e ${n2} é igual a ${s}`
+        }
+
+        function subtrair() {
+            var tn3 = document.getElementById('txtn3')
+            var tn4 = document.getElementById('txtn4')
+            var res2 = document.getElementById('res2')
+            var n3 = Number(tn3.value)
+            var n4 = Number(tn4.value)
+            var s2 = n3 - n4
+            res2.innerHTML = ` A subtração entre ${n3} e ${n4} é igual a ${s2}`
+        }
+    </script>
+</body>
+
+</html>
