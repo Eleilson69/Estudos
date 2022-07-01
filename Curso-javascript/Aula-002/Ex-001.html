@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiros passos com o DOM</title>
+    <style>
+        body {
+            background-color: rgb(39, 57, 111);
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+
+<body id="tema">
+    <h1>Iniciando estudos DOM</h1>
+    <p>Aqui vai o resultado</p>
+    <p>Aprendendo a usar o <strong>DOM</strong> em javascript</p>
+
+    <button onclick="black0()" type="button">tema normal</button>
+    <button onclick="black1()" type="button">tema black</button>
+    <div>Clique em min</div>
+    <script>
+        function black0() {
+            var corpo = document.getElementById('tema')
+            corpo.style.background = 'rgb(39, 57, 111)'
+            var p = document.getElementById('tema')
+            p.style.color = 'white'
+        }
+
+        function black1() {
+            var corpo = document.getElementById('tema')
+            corpo.style.background = 'red'
+            var p = document.getElementById('tema')
+            p.style.color = 'black'
+        }
+    </script>
+</body>
+
+</html>
