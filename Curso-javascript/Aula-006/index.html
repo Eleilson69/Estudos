@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="Pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificador de idade</title>
+</head>
+
+<body>
+    <h1>Veja se Você pode votar</h1>
+    Idade<input type="number" name="idade" id="idade">
+    <input type="button" value="Verificar" onclick="Verrifi()">
+    <div id="res">Resultado</div>
+    <script>
+        function Verrifi() {
+            var idade1 = document.getElementById('idade')
+            var res = document.getElementById('res')
+            var verif = idade1.value
+            res.innerHTML = `<p>Sua Idade e ${verif} anos</p>`
+            if (verif < 16) {
+                res.innerHTML += `<p>Não vota</p>`
+            } else if (verif < 18) {
+                res.innerHTML += `<p>Voto Opcional</p>`
+            } else if (verif > 66) {
+                res.innerHTML += `<p>Voto Opcional</p>`
+            } else {
+                res.innerHTML += `<p>Voto Obrigatorio</p>`
+            }
+        }
+    </script>
+</body>
+
+</html>
