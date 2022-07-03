@@ -1,6 +1,6 @@
 var c = 1
-while (c <= 5) {
+do {
     console.log(`passo ${c}`)
-    c++
-
 }
+while (c <= 5)
+c++
