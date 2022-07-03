@@ -14,27 +14,25 @@
             align-items: center;
             margin-top: 20px;
         }
+        
+        #res {
+            width: 1000px;
+            height: 100px;
+            background-color: aqua;
+        }
     </style>
 </head>
 
 <body>
     Que Horas são ?
-    <input type="text" id="txt">
+    <input type="number" id="txt">
     <button onclick="contar()">Contar</button><br />
+    <div id="res">Resposta</div>
 
 
     <script type="text/javascript">
-        function contar() {
-            count = document.getElementById('txt')
-            var c = count.value
-
-            while (c <= 20) {
-
-                document.writeln("ola <br>");
-                c++
-
-            }
-
+        for (c = 1; c <= 10; c++) {
+            document.getElementById('res').innerHTML = `Bom Dia ${c}`
         }
     </script>
 </body>
